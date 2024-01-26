@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
