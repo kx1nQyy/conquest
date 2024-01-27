@@ -1,0 +1,9 @@
+.main-header {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: space-between;
+    height: var(--main-header-height);
+}

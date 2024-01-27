@@ -1,3 +1,22 @@
+:root {
+    --main-header-height: 85px;
+    --main-footer-height: 275px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #FDFDFB;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+main {
+    min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height));
 }

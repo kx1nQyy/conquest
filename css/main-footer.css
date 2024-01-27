@@ -1,0 +1,9 @@
+.main-footer {
+    background-color: #444240;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    height: var(--main-footer-height);
+}
