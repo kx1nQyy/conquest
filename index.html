@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/pages/index.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -21,21 +25,21 @@
                     <img src="./img/logo.svg" alt="logo">
                 </a>
 
-                <ul class="nav-list">
-                    <li><a href="#">Католог</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Контакты</a></li>
+                <ul class="nav-list" style="display: inline;">
+                    <li><a style="margin-left: 60px;" href="#">Католог</a></li>
+                    <li><a style="margin-left: 60px;" href="#">Доставка</a></li>
+                    <li><a style="margin-left: 60px;" href="#">Контакты</a></li>
                 </ul>
 
-                <ul class="nav-list">
+                <ul class="nav-list2" style="display: inline;">
                     <li>
-                        <a href=""><img src="./img/nav.svg" alt="nav"></a>
+                        <a style="margin-right: 23px;" href=""><img src="./img/nav.svg" alt="nav"></a>
                     </li>
                     <li>
-                        <a href=""><img src="./img/like.svg" alt="like"></a>
+                        <a style="margin-right: 23px;" href=""><img src="./img/like.svg" alt="like"></a>
                     </li>
                     <li>
-                        <a href=""><img src="./img/cart.svg" alt="cart"></a>
+                        <a style="margin-right: 100px;" href=""><img src="./img/cart.svg" alt="cart"></a>
                     </li>
                 </ul>
             </nav>
@@ -58,7 +62,75 @@
     </main>
 
     <footer class="main-footer">
-        <div class="container"></div>
+        <div class="container-footer">
+            <div class="contacts">
+                <ul>
+                    <a class="logo-footer" href="">
+                        <img src="./img/logo-footer.svg" alt="logo">
+                    </a>
+                    <li>
+                        <b>8(800)555-35-35</b>
+                    </li>
+                    <li>
+                        <b>harrycoder@webdev.com</b>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="company">
+                <ul>
+                    <h2>О КОМПАНИИ</h2>
+                    <li>
+                        <b>Наши магазины</b>
+                    </li>
+                    <li>
+                        <b>Вакансии</b>
+                    </li>
+                    <li>
+                        <b>Сертификаты</b>
+                    </li>
+                    <li>
+                        <b>Отзывы</b>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="customers">
+                <ul>
+                    <h2>ПОКУПАТЕЛЯМ</h2>
+                    <li>
+                        <b>Католог товаров</b>
+                    </li>
+                    <li>
+                        <b>Как заказать?</b>
+                    </li>
+                    <li>
+                        <b>FAQ</b>
+                    </li>
+                    <li>
+                        <b>Корпоративным клиентам </b>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="payment">
+                <ul>
+                    <h2>ОПЛАТА И ДОСТАВКА</h2>
+                    <li>
+                        <b>Способы оплаты</b>
+                    </li>
+                    <li>
+                        <b>Время доставки</b>
+                    </li>
+                    <li>
+                        <b>Гарантии и ремонт</b>
+                    </li>
+                    <li>
+                        <b>Возраст и компенсации</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 </body>
