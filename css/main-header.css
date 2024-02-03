@@ -3,7 +3,37 @@
 }
 
 .main-header nav {
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: var(--main-header-height);
 }
+
+.main-header nav .nav-list {
+    display: flex;
+}
+
+.main-header nav .nav-list:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-header nav .nav-list-item:not(:first-child) {
+    margin-left: 65px;
+}
+
+.main-header nav .nav-list:nth-child(3) li:not(:first-child) {
+    margin-left: 23px;
+}
+
+.main-header nav .nav-list-item a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #555248;
+    text-decoration: none;
+}
+
+.

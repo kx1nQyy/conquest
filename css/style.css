@@ -20,3 +20,9 @@ body {
 main {
     min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height));
 }
+
+
+/* Проверка сетки страницы */
+* {
+    /* border: 1px solid #000; */
+}
