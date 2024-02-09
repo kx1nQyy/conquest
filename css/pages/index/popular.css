@@ -1,7 +1,62 @@
-section .container .poduct-list .product-item {
-    width: 370px;
-    height: 467px;
-    background-color: #000;
+.popular .container .product-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 27.5px;
 }
 
-he
+.popular .row-top h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 71px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.popular .row-top a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #444240;
+
+}
+
+.popular .product-item{
+    width: 370px;
+    height: 467px;
+    background-color: #fbfbfb;
+}
+
+.product-img{
+    margin-left: 25px;
+    margin-top: 2px;
+}
+
+.popular .product-list .product-info h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1B1A17;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+
+/* Не работает */
+.popular .product-list .product-info b {
+    font-family: 'Prata', serif;
+    margin-left: 40px;
+    font-size: 12px;
+}
+
+.popular .product-list a {
+    font-family: 'Playfair Display', serif;
+    margin-top: 19px; /* не работает  */
+    padding-left: 88px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1B1A17;
+    text-decoration: none;
+}
