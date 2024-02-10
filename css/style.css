@@ -1,6 +1,7 @@
 :root {
     --main-header-height: 85px;
     --main-footer-height: 275px;
+    --font-color: #1B1A17;
 }
 
 * {
@@ -18,7 +19,8 @@ body {
 }
 
 main {
-    min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height));
+    /* min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height)); */
+
 }
 
 
@@ -26,3 +28,5 @@ main {
 * {
     /* border: 1px solid #000; */
 }
+
+
