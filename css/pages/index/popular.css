@@ -42,7 +42,7 @@
     height: 467px;
     padding-top: var(--product-item-padding-top);
     padding-left: var(--product-item-padding-left);
-    border: 1px dashed var(--font-color);
+    border: 1px solid var(--font-color);
     background-color: #fbfbfb;
     transition-duration: 200ms;
     transition-property: transform;
