@@ -19,10 +19,14 @@
     text-align: center;
 }
 
+
+
 .popular .row-top a {
     position: absolute;
     top: 36px;
     right: 0;
+    left: calc(var(--line-width) * -1 - 18px);
+    width: var(--line-width);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-decoration: none;

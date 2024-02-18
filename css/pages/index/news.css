@@ -1,0 +1,48 @@
+.news .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1171px;
+    height: 460px;
+}
+
+.news {
+    margin-bottom: 90px;
+}
+
+.news .text-news h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 140px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.news .text-news b {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.news .container .news-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 119px;
+}
+
+.news .container .news-list .news-list-item {
+    margin-right: 10px;
+}
+
+.news .container .news-img {
+    display: flex;
+    flex-direction: row;
+}
+
+.news .container .news-img img {
+    margin-top: 10px;
+}
+
+.news .container .news-img .small-picture {
+    margin-right: 10px;
+}
