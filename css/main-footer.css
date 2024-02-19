@@ -1,6 +1,7 @@
 .main-footer {
+    margin-top: var(--section-padding);
+    padding-top: var(--section-padding);
     background-color: #444240;
-    padding-top: 75px;
 }
 
 .main-footer .container {
@@ -13,12 +14,20 @@
     margin-top: 23px;
 }
 
+.main-footer .col .contact-list li {
+    display: flex;
+}
+
 .main-footer .col .contact-list li:not(:first-child) {
     margin-top: 15px;
 }
 
 .main-footer .col h3 + ul {
     margin-top: 33px;
+}
+
+.main-footer .col h3 + ul li {
+    display: flex;
 }
 
 .main-footer .col h3 + ul li:not(:first-child) {

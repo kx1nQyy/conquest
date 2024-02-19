@@ -1,7 +1,8 @@
 :root {
-    --main-header-height: 85px;
-    --main-footer-height: 275px;
     --font-color: #1B1A17;
+    --main-footer-height: 275px;
+    --main-header-height: 85px;
+    --section-padding: 50px;
 }
 
 * {
@@ -25,8 +26,13 @@ main {
 
 
 /* Проверка сетки страницы */
-* {
+*:not(img, .small-picture),
+*::before,
+*::after {
     /* border: 1px solid #000; */
 }
 
-
+.main-footer,
+.main-footer * {
+    /* border-color: #fff; */
+} 
