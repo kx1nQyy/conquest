@@ -1,3 +1,7 @@
+:root {
+    --counter-size: 13px;
+}
+
 .main-header {
     position: fixed;
     top: 0;
@@ -40,4 +44,25 @@
     font-size: 14px;
     color: #555248;
     text-decoration: none;
+}
+
+.main-header nav .nav-list:nth-child(3) li:nth-child(2) a {
+    position: relative;
+}
+
+.main-header nav .nav-list:nth-child(3) li:nth-child(2) a .counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--counter-size);
+    height: var(--counter-size);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    border-radius: 100%;
+    background-color: #E6C8B4;
+    transform: translate(50%, -50%);
 }

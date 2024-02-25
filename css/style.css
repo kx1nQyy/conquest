@@ -2,7 +2,7 @@
     --font-color: #1B1A17;
     --main-footer-height: 275px;
     --main-header-height: 85px;
-    --section-padding: 50px;
+    --section-padding: 70px;
 }
 
 * {
@@ -19,12 +19,6 @@ body {
     padding: 0 15px;
 }
 
-main {
-    /* min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height)); */
-
-}
-
-
 /* Проверка сетки страницы */
 *:not(img, .small-picture),
 *::before,
@@ -35,4 +29,4 @@ main {
 .main-footer,
 .main-footer * {
     /* border-color: #fff; */
-} 
+}

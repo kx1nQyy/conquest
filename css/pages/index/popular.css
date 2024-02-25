@@ -5,9 +5,7 @@
 }
 
 .popular {
-    padding-top: calc(var(--section-padding) + var(--main-header-height ) );
-    padding-bottom: var(--section-padding);
-    /* margin: calc(7  1px + var(--main-header-height)) 0 71px; */
+    padding: var(--section-padding) 0;
 }
 
 .popular .row-top {
