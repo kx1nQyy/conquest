@@ -1,8 +1,8 @@
 .intro {
     padding: calc(var(--section-padding) + var(--main-header-height)) 0 var(--section-padding);
-    
     background-size: 1366px 768px;
     background-repeat: no-repeat;
+    background-color: #FDFDFB;
 }
 
 .intro .container {
@@ -13,6 +13,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0px 100px;
+    background-color: bisque;
 }
 
 .intro .col:nth-child(1) {
@@ -62,23 +63,16 @@
 
 .intro .col:nth-child(2) {
     position: relative;
-    border: 1px solid #000;
 }
 
 .intro .col:nth-child(2) .price {
     position: absolute;
-    font-family: 'Prata', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
     top: 135px;
     left: -79px;
 }
 
 .intro .col:nth-child(2) span {
     position: absolute;
-    font-family: 'Prata', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
     right: -85px;
     bottom: 119px;
 }
