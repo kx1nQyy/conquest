@@ -1,7 +1,12 @@
 .about {
     margin: var(--section-padding) 0;
-    padding: 37px 0;
-    background-color: #F7F5EF;
+    padding-top: 37px;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(247, 245, 239, 1) 40%,
+            rgba(244, 244, 244, 0.8) 40%
+        );
 }
 
 .about .container {
@@ -10,7 +15,19 @@
 }
 
 .about .container .col:nth-child(1) {
+    display: flex;
+    flex-direction: column;
     margin-left: 80px;
+}
+
+.about .container .col:nth-child(1) .slider-control {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    height: 53px;
+    margin-right: 83px;
 }
 
 .about .container .col:nth-child(2) {
@@ -49,14 +66,6 @@
     background-color: #D4B098;
 }
 
-.about .container .col:nth-child(1) .slider-control {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90px;
-    margin-top: 20px;
-    margin-left: 375px;
-}
 
 .about .container .col:nth-child(1) .slider-control button {
     height: 20px;

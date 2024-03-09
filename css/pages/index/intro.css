@@ -1,6 +1,5 @@
 .intro {
     padding: calc(var(--section-padding) + var(--main-header-height)) 0 var(--section-padding);
-    background-size: 1366px 768px;
     background-repeat: no-repeat;
     background-color: #FDFDFB;
 }
@@ -10,10 +9,9 @@
     flex-direction: row;
     justify-content: space-between;
     background-image: url(../../../img/elipse-main.png);
-    background-size: 100%;
+    background-size: 1366px 768px;
     background-repeat: no-repeat;
-    background-position: 0px 100px;
-    background-color: bisque;
+    background-position: 20px 0px;
 }
 
 .intro .col:nth-child(1) {
@@ -71,8 +69,30 @@
     left: -79px;
 }
 
+.intro .col:nth-child(2) .price::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -65px;
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+    transform: translateY(-50%);
+}
+
 .intro .col:nth-child(2) span {
     position: absolute;
     right: -85px;
     bottom: 119px;
+}
+
+.intro .col:nth-child(2) span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -65px;
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+    transform: translateY(-50%);
 }
