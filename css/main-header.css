@@ -31,7 +31,11 @@
     transform: translate(-50%, -50%);
 }
 
-.main-header nav .nav-list-item:not(:first-child) {
+.main-header nav .nav-list li {
+    display: flex;
+}
+
+.main-header nav .nav-list:nth-child(2) li:not(:first-of-type) {
     margin-left: 65px;
 }
 
@@ -39,7 +43,7 @@
     margin-left: 23px;
 }
 
-.main-header nav .nav-list-item a {
+.main-header nav .nav-list li a {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #555248;

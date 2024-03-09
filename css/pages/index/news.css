@@ -23,7 +23,6 @@
 .news .text-news p {
     width: 376px;
     margin-top: 40px;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 170%;
@@ -34,19 +33,19 @@
     font-weight: 500;
 }
 
-.news .text-news .news-list {
+.news .text-news .social-list {
     display: flex;
-    flex-direction: row; 
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
     margin-top: auto;
     margin-bottom: 63px;
 }
 
-.news .text-news .news-list li:not(:first-child) {
+.news .text-news .social-list li:not(:first-child) {
     margin-left: 18px;
 }
 
-.news .text-news .news-list li a {
+.news .text-news .social-list li a {
     display: flex;
 }
 
