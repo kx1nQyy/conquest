@@ -11,7 +11,7 @@
 }
 
 .main-footer .col .contact-list {
-    margin-top: 23px;
+    margin-top: 51.5px;
 }
 
 .main-footer .col .contact-list li {
@@ -50,5 +50,12 @@
 }
 
 .main-footer .col:first-child {
-    margin-top: -12px;
+    position: relative;
+}
+
+.main-footer .col:first-child .logo-footer {
+    position: absolute;
+    top: -13px;
+    right: 0;
+    left: 0
 }
