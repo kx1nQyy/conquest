@@ -95,17 +95,23 @@
 
         <section class="catalog">
             <div class="container">
-                <div class="nav-list">
-                    <p>Главная</p>
-                    <div class="nav-decoration"></div>
-                    <p>Каталог</p>
-                    <div class="nav-decoration"></div>
-                    <p><b>Мужские часы</b></p>
-                </div>
+                <ul class="breadcrumb-list">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a class="active" href="">Мужские часы</a></li>
+                </ul>
 
                 <div class="catalog-head">
+                    <h1 class="visually-hidden"></h1>
                     <h2>Мужские часы</h2>
-                    <p>Сортировать по: <b>популярноcти</b></p>
+                    <div>
+                        <label>Сортировать по:</label>
+                        <select name="" id="">
+                            <option value="">Популярности</option>
+                            <option value="">Цене</option>
+                            <option value="">Алфавиту</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="catalog-product">

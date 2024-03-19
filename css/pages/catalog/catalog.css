@@ -2,16 +2,19 @@
     padding: calc(var(--section-padding) + var(--main-header-height)) 0 var(--section-padding);
 }
 
-.catalog .nav-list {
+.catalog .container .breadcrumb-list{
     display: flex;
     flex-direction: row;
+}
+
+.catalog .breadcrumb-list a{
     font-family: 'Robot', serif;
     font-size: 14px;
     font-weight: 400;
     color: #B3B3B3;
 }
 
-.catalog .nav-list p:nth-child(5) {
+.catalog .breadcrumb-list p:nth-child(5) {
     color: #000;
 } 
 
