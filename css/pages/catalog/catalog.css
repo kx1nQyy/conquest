@@ -6,6 +6,15 @@
     display: flex;
     flex-direction: row;
 }
+/* не работаеют псевдокласыы */
+.catalog .container .breadcrumb-list li a:nth-child(2) { 
+    margin-left: 14px;
+}
+
+.catalog .container .breadcrumb-list img{
+    margin-left: 14px;
+    transform: translateY(6px);
+}
 
 .catalog .breadcrumb-list a{
     font-family: 'Robot', serif;
@@ -17,10 +26,6 @@
 .catalog .breadcrumb-list p:nth-child(5) {
     color: #000;
 } 
-
-.catalog .nav-list p:not(:first-child) {
-    padding-left: 14px;
-}
 
 /* .catalog .nav-list .nav-decoration {
     background-image: url(../../../img/icons/catalog-arrow.svg);
@@ -59,7 +64,6 @@
 .catalog .catalog-product {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-top: 40px;
 }
 
@@ -70,10 +74,35 @@
 }
 
 .catalog .catalog-product .product-list .product-list-item {
-    display: block;
+    position: relative;
     width: 252px;
     height: 300px;
-    border: 1px solid #000;
-    margin-right: 40px;
+    /* border: 1px solid #000; */
     margin-bottom: 40px;
+    background-color: #FDFDFB;
+}
+
+.catalog .catalog-product .product-list .product-list-item:not(:nth-child(3n)) {
+    margin-right: 40px;
+}
+
+.catalog .catalog-product .product-list .product-list-item h3 {
+    position: absolute;
+    transform: translate(22px, 20px);
+    font-family: 'Robot', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 152%;
+    font-weight: 700;
+    color: #444240;
+}
+
+.catalog .catalog-product .product-list .product-list-item b {
+    position: absolute;
+    transform: translate(22px, 42px);
+    font-family: 'Robot', serif;
+    font-size: 14px;
+    line-height: 152%;
+    font-weight: 400;
+    color: #636261;
 }
