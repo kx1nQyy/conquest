@@ -6,9 +6,15 @@
     display: flex;
     flex-direction: row;
 }
-/* не работаеют псевдоклассы */
-.catalog .container .breadcrumb-list li a:nth-child(2) { 
-    margin-left: 14px;
+
+.catalog .container .breadcrumb-list li:not(:first-child):before { 
+    content: '';
+    display: inline-block;
+    background-image: url(../../../img/icons/arrow-breadcrumb.svg);
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 9px;
+    margin: 0 14px;
 }
 
 .catalog .container .breadcrumb-list img{
@@ -45,13 +51,20 @@
     font-size: 32px;
 }
 
-.catalog .catalog-head p {
-    position: absolute;
+.catalog .catalog-head > div {
+    display: flex;
+    align-items: center;
+}
+
+.catalog .catalog-head div label {
     font-family: 'Robot', serif;
     font-size: 14px;
     line-height: 152%;
-    top: 2px;
-    left: 935px;
+    user-select: none;
+}
+
+.catalog .catalog-head div select {
+    margin-left: 8px;
 }
 
 .catalog .catalog-sorting {

@@ -31,13 +31,14 @@ body {
 }
 
 /* Проверка сетки страницы */
-*:not(img, .small-picture),
+*:not(img, .small-picture, .product-list-item, .product-list),
 *::before,
 *::after {
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
+    box-sizing: border-box !important;
 }
 
 .main-footer,
 .main-footer * {
-    /* border-color: #fff; */
+    border-color: #000;
 }
