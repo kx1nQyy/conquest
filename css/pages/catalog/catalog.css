@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
 }
-/* не работаеют псевдокласыы */
+/* не работаеют псевдоклассы */
 .catalog .container .breadcrumb-list li a:nth-child(2) { 
     margin-left: 14px;
 }
@@ -64,6 +64,7 @@
 .catalog .catalog-product {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 40px;
 }
 
@@ -71,13 +72,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 836px;
 }
 
 .catalog .catalog-product .product-list .product-list-item {
     position: relative;
     width: 252px;
     height: 300px;
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     margin-bottom: 40px;
     background-color: #FDFDFB;
 }
