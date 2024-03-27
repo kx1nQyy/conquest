@@ -1,18 +1,18 @@
-.strap {
+.range {
     margin: var(--section-padding) 0;
 }
 
-.strap .container .strap-header {
+.range .container .strap-header {
     position: relative;
 }
 
-.strap .container .strap-header h2 {
+.range .container .strap-header h2 {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: 400;
 }
 
-.strap .container .strap-header a {
+.range .container .strap-header a {
     position: absolute;
     top: 25px;
     right: 0;
@@ -22,7 +22,7 @@
     color: #444240;
 }
 
-.strap .container .strap-header a::before {
+.range .container .range-header a::before {
     content: '';
     position: absolute;
     right: 0;
@@ -32,33 +32,34 @@
     height: 1px;
 }
 
-.strap .container .strap-catalog {
+.range .container .range-catalog {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
     position: relative;
 }
 
-.strap .container .strap-catalog .prev-btn {
-    margin-right: 40px;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    transform: translate(-40px, 175px);
-}
 
-.strap .container .product-list {
+.range .container .product-list {
     display: flex;
     flex-direction: row;
     position: relative;
 }
 
-.strap .container .product-list .product-info h3 {
+.range .container .product-list .product-list-item:not(:first-child) {
+    margin-left: 42px;
+}
+
+.range .container .product-list .product-list-item {
+    border: 1px solid;
+}
+
+.range .container .product-list .product-info h3 {
     position: absolute;
     transform: translate(20px, 20px);
 }
 
-.strap .container .product-list .product-info b {
+.range .container .product-list .product-info b {
     position: absolute;
     transform: translate(20px, 42px);
     font-family: 'Roboto', sans-serif;
@@ -67,10 +68,22 @@
     color: #636261;
 }
 
-.strap .container .strap-catalog .next-btn {
+.range .container .range-catalog button {
     margin-right: 40px;
-    height: 20px;
-    width: 20px;
+    height: 23px;
+    width: 12px;
+    background: none;
+    border: none;
     position: absolute;
-    transform: translate(1199px, 175px);
 }
+
+.range .container .range-catalog button:nth-child(1) {
+    transform: translate(-40px, 175px);
+    background-image: url(../../../img/icons/arrow-left-strap.png);
+}
+
+.range .container .range-catalog button:nth-child(3) {
+    transform: translate(1199px, 175px);
+    background-image: url(../../../img/icons/arrow-right-strap.png);
+}
+
